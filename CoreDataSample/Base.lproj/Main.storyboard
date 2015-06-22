@@ -19,7 +19,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AeQ-IN-aaC">
                                 <rect key="frame" x="158" y="74" width="285" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="J3Z-km-u6t"/>
+                                    <constraint firstAttribute="width" constant="285" id="oTx-Qa-cYx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -27,7 +27,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU9-mk-VHp">
                                 <rect key="frame" x="230" y="237" width="140" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="HQ2-J2-yzp"/>
+                                    <constraint firstAttribute="width" constant="140" id="yMB-Sq-jLA"/>
                                 </constraints>
                                 <state key="normal" title="Write">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,16 +45,30 @@
                                     <action selector="read:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="baD-ZX-YE6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSa-l7-zhz">
+                                <rect key="frame" x="269" y="422" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="IXX-oX-c7g"/>
+                                </constraints>
+                                <state key="normal" title="List">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EJG-Qo-pNW" kind="show" id="mXn-0R-ntJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bU9-mk-VHp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="554-Vb-wUx"/>
-                            <constraint firstItem="AeQ-IN-aaC" firstAttribute="centerX" secondItem="bU9-mk-VHp" secondAttribute="centerX" id="6oP-hw-Cpe"/>
-                            <constraint firstItem="7pc-nq-8qR" firstAttribute="top" secondItem="bU9-mk-VHp" secondAttribute="bottom" constant="66" id="ToO-E7-DGC"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7pc-nq-8qR" secondAttribute="bottom" constant="237" id="cty-rg-rZx"/>
-                            <constraint firstItem="AeQ-IN-aaC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="54" id="eDc-yw-GIg"/>
-                            <constraint firstItem="7pc-nq-8qR" firstAttribute="leading" secondItem="bU9-mk-VHp" secondAttribute="leading" id="jqS-vT-BDS"/>
-                            <constraint firstItem="bU9-mk-VHp" firstAttribute="trailing" secondItem="7pc-nq-8qR" secondAttribute="trailing" id="nvo-vS-ToA"/>
+                            <constraint firstItem="AeQ-IN-aaC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="54" id="7SR-0V-xbR"/>
+                            <constraint firstItem="7pc-nq-8qR" firstAttribute="trailing" secondItem="bU9-mk-VHp" secondAttribute="trailing" id="BIQ-iU-hjl"/>
+                            <constraint firstItem="7pc-nq-8qR" firstAttribute="top" secondItem="bU9-mk-VHp" secondAttribute="bottom" constant="66" id="Sdh-ZJ-952"/>
+                            <constraint firstItem="bU9-mk-VHp" firstAttribute="leading" secondItem="7pc-nq-8qR" secondAttribute="leading" id="Wg7-nB-kAe"/>
+                            <constraint firstItem="AeQ-IN-aaC" firstAttribute="centerX" secondItem="bU9-mk-VHp" secondAttribute="centerX" id="bro-V4-lj6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xSa-l7-zhz" secondAttribute="bottom" constant="148" id="evl-p0-gy6"/>
+                            <constraint firstItem="xSa-l7-zhz" firstAttribute="top" secondItem="7pc-nq-8qR" secondAttribute="bottom" constant="59" id="j9o-bu-Cah"/>
+                            <constraint firstItem="bU9-mk-VHp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="pqS-ti-GJd"/>
+                            <constraint firstItem="7pc-nq-8qR" firstAttribute="centerX" secondItem="xSa-l7-zhz" secondAttribute="centerX" id="xap-2I-d25"/>
                         </constraints>
                     </view>
                     <connections>
@@ -63,6 +77,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Memos-->
+        <scene sceneID="xHU-8u-cTP">
+            <objects>
+                <viewController id="EJG-Qo-pNW" customClass="MemosTableViewController" customModule="CoreDataSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uy2-lJ-NnB"/>
+                        <viewControllerLayoutGuide type="bottom" id="luT-W9-MwI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D6z-YZ-l88">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qp4-dM-SWq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7lb-ie-bBT">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7lb-ie-bBT" id="zqD-YY-ihu">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Memos" id="phe-au-Oc4"/>
+                    <connections>
+                        <outlet property="tableView" destination="qp4-dM-SWq" id="qJS-9K-G4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqG-6z-p70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="337"/>
         </scene>
     </scenes>
 </document>

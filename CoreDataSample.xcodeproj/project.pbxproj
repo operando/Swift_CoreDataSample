@@ -15,6 +15,7 @@
 		B314E3701B3851AE0014D4FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B314E36E1B3851AE0014D4FD /* LaunchScreen.xib */; };
 		B314E37C1B3851AE0014D4FD /* CoreDataSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B314E37B1B3851AE0014D4FD /* CoreDataSampleTests.swift */; };
 		B314E3891B3855480014D4FD /* Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B314E3881B3855480014D4FD /* Memos.swift */; };
+		B314E38B1B385DE50014D4FD /* MemosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B314E38A1B385DE50014D4FD /* MemosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B314E37A1B3851AE0014D4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B314E37B1B3851AE0014D4FD /* CoreDataSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSampleTests.swift; sourceTree = "<group>"; };
 		B314E3881B3855480014D4FD /* Memos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memos.swift; sourceTree = "<group>"; };
+		B314E38A1B385DE50014D4FD /* MemosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				B314E36E1B3851AE0014D4FD /* LaunchScreen.xib */,
 				B314E3641B3851AE0014D4FD /* CoreDataSample.xcdatamodeld */,
 				B314E3601B3851AE0014D4FD /* Supporting Files */,
+				B314E38A1B385DE50014D4FD /* MemosTableViewController.swift */,
 			);
 			path = CoreDataSample;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				B314E3681B3851AE0014D4FD /* ViewController.swift in Sources */,
 				B314E3661B3851AE0014D4FD /* CoreDataSample.xcdatamodeld in Sources */,
+				B314E38B1B385DE50014D4FD /* MemosTableViewController.swift in Sources */,
 				B314E3631B3851AE0014D4FD /* AppDelegate.swift in Sources */,
 				B314E3891B3855480014D4FD /* Memos.swift in Sources */,
 			);
